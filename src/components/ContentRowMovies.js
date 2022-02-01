@@ -21,7 +21,6 @@ function ContentRowTop(){
     },[])
     
 
-
     const[users, setUsers] = useState([])
     useEffect(()=>{console.log('se monto el componente')
     fetch('http://localhost:5050/api/users')
@@ -38,6 +37,7 @@ function ContentRowTop(){
     useEffect(()=>{
     return ()=> console.log('se desmonto el componente')
     },[])
+
 
 
     let productInDataBase = {
