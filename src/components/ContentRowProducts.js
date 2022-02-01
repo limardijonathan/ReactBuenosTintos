@@ -2,7 +2,7 @@ import React from 'react';
 import SmallCard from './SmallCard';
 import {useState, useEffect} from 'react'
 
-function ContentRowTop(){
+function ContentRowProducts(){
     const[products, setProducts] = useState([])
     useEffect(()=>{console.log('se monto el componente')
     fetch('http://localhost:5050/api/products')
@@ -44,7 +44,8 @@ function ContentRowTop(){
         color:   "primary",
         titulo: "TOTAL DE PRODUCTOS",
         valor: products.count,
-        icono: "fas fa-film",
+        icono: "fa-wine-glass-alt", 
+        //"fas fa-film"
     }
     
     let amount ={
@@ -81,4 +82,4 @@ function ContentRowTop(){
         </React.Fragment>
     )
 }
-export default ContentRowTop;
+export default ContentRowProducts;

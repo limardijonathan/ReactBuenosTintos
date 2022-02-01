@@ -1,6 +1,7 @@
 import React from 'react';
 
-function SmallCard(props){
+function 
+SmallCard(props){
     return(
         <React.Fragment>
             <div className="col-md-4 mb-4">

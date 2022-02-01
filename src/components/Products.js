@@ -3,9 +3,9 @@
 import React, {Component} from 'react';
 
 //Importar nuestro componente
-import MovieList from './MovieList';
+import ProductsList from './ProductsList';
 
-class Movie extends Component{
+class Products extends Component{
     constructor(){
         super()
         this.state ={
@@ -50,7 +50,7 @@ class Movie extends Component{
                                 {
                                     //console.log(this.state.movies)
                                     this.state.products.map((products,index)=>{
-                                        return <MovieList  {...products} key={index}  />
+                                        return <ProductsList  {...products} key={index}  />
                                     })
                                 }
                             </tbody>
@@ -65,4 +65,4 @@ class Movie extends Component{
     )
     }
 }
-export default Movie;
+export default Products;

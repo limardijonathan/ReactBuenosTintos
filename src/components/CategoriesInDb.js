@@ -3,9 +3,9 @@
 import React, {Component} from 'react';
 
 //Importar nuestro componente
-import Genre from './Genre';
+import Category from './Category';
 
-class GenresInDb extends Component{
+class CategoriesInDb extends Component{
     constructor(){
         super()
         this.state ={
@@ -41,7 +41,7 @@ class GenresInDb extends Component{
                                 {
                                     //console.log(this.state.genresList)
                                     this.state.products.map((products,index)=>{
-                                        return  <Genre  {...products}  key={index} />
+                                        return  <Category  {...products}  key={index} />
                                     })
                                 }
                             </div>
@@ -53,4 +53,4 @@ class GenresInDb extends Component{
     )
     }
 }
-export default GenresInDb;
+export default CategoriesInDb;

@@ -46,6 +46,7 @@ class LastProductInDb extends Component{
 									<div className="text-center">
 										<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={this.state.productsListados.image} alt=" Star Wars - Mandalorian "/>
 									</div>
+                                    <h3>{this.state.productsListados.name}</h3>
 									<p>{this.state.productsListados.description}</p>
 								</div>
 							</div>

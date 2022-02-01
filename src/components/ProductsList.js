@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MovieList(props){
+function ProductsList(props){
     return (
         <React.Fragment>
             <tr>
@@ -11,4 +11,4 @@ function MovieList(props){
         </React.Fragment>
     )
 }
-export default MovieList;
+export default ProductsList;
